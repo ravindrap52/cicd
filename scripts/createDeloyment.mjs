@@ -3,7 +3,7 @@
 import { Octokit } from "octokit";
 
 const octokit = new Octokit({
-    auth: 'GITHUB_TOKEN'
+    auth: process.env.GITHUB_TOKEN
   })
 
   const options = {
