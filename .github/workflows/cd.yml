@@ -1,11 +1,11 @@
-name: runs only when someone creates a pull request
+name: deploy code
 on:
   workflow_dispatch:
-  pull_request:
+  push:
     branches:
       - main
 jobs:
-  run-tests:
+  run-deployment:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -16,5 +16,3 @@ jobs:
       - name: list files
         run: ls -l
       - run: yarn install --frozen-lockfile
-      - run: yarn test:ci
-
