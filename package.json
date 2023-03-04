@@ -9,7 +9,7 @@
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
     "test:ci": "vitest --run",
-    "deployment": "node ./scripts/createDeloyment.js"
+    "deployment": "node ./scripts/createDeloyment.mjs"
   },
   "devDependencies": {
     "@vitest/coverage-istanbul": "^0.29.2",
