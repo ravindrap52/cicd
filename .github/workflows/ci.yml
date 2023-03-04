@@ -1,5 +1,5 @@
 name: run unitest
-on: [push]
+on: [push, workflow_dispatch]
 jobs:
   runs-on: ubuntu-latest
   steps:
