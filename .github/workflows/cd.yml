@@ -16,3 +16,4 @@ jobs:
       - name: list files
         run: ls -l
       - run: yarn install --frozen-lockfile
+      - run: yarn deployment
