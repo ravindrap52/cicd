@@ -13,6 +13,7 @@ jobs:
         with:
           path: |
             ~/node_modules
+          key: node_modules
       - run: yarn install --frozen-lockfile
       - run: yarn test:ci
 
