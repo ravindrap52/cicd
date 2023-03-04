@@ -8,5 +8,5 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '18'
-      - run: npm ci
-      - run: npx vitest --run
+      - run: yarn install --frozen-lockfile
+      - run: yarn test:ci
